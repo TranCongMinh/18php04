@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<!-- Dung de ho tro trinh duyet responsive trang web -->
+  <title>Web đặt phòng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="Learn HTML5, CSS3, PHP">
+	<meta name="keywords" content="PHP7, HTML5, CSS3">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/datepicker.css">
+<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+</script>
+<script type="text/javascript" src="js/date.js">
+</script>
+<script>
+  $( function() {
+    $( "#datepickerstart" ).datepicker();//
+    $( "#datepickerend" ).datepicker();
+    
+
+  } );
+  </script>
+</head>
+<body>    
+          <div id="header">
+          <ul id="menu">
+          <li><a href="#">Thông tin</a></li>
+          <li><a href="#">Chiến dịch</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Quảng cáo</a></li>
+          </ul>
+          </div>
+    <div id="slider">
+    <div>
+    	<img class="img" src="img/9.gif">
+    </div>
+    <div>
+    	<img class="img" src="img/6.gif">
+    </div>
+    <div>
+    	<img class="img" src="img/8.gif">
+    </div>
+    <div id="buttom-next" onclick="move(1)">
+      
+    </div>
+    <div id="buttom-back" onclick="move(-1)">
+      
+    </div>
+    </div>
+    <div id="form-dat-phong">
+    <p>Quý khách vui lòng nhập thông tin ở đâyy</p>
+    <form >
+    <p>Họ tên:<br>  <input type="text" id="name"></p> 
+    <p id="resultName"></p>
+    <p>Đặt phòng số:<br><input type="text" id="idPhong"></p>
+    <p id="resultidPhong"></p>
+    <p>Số người:<br><input type="text" id="soNguoi"></p>
+    <p id="resultsoNguoi"></p>
+    <p>Ngày Đến: <br><input type="text" id="datepickerstart"></p>
+    <p id="resultdatepickerstart"></p>
+    <p>Ngày Đi:<br> <input type="text" id="datepickerend"></p><input style="display: none;" type="text" id="today">
+
+    <p id="resultdatepickerend"></p>
+    <input type="button" id="submit" value="Gửi">
+    </form> 
+    </div>
+    <script src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

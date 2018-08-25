@@ -1,0 +1,29 @@
+img{
+	height: 300px;
+	width: 900px;
+	object-fit: cover;
+}
+#slider{
+	position: relative;
+	height: 300px;
+	width: 900px;
+	margin: 0 auto;
+}
+#buttom-back{
+	background-image: url("../img/n.png");
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	z-index: 1;
+}
+#buttom-next{
+	background-image: url("../img/m.png");
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 120px;
+	right: 0px;
+	z-index: 1;	
+}

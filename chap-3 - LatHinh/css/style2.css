@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	overflow: hidden;
+	
+}
+.frames{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	object-fit: cover;
+/*	float: left;*/
+	background: red;
+	border:1px solid black;
+/*	margin:1px;*/
+}
+.frames > img{
+	width: 100px;
+	height: 100px;
+}
+.clear{
+	clear: both;
+}
+.hidden{
+	display: none;
+}
+.frames:hover{
+	cursor: pointer;
+}
