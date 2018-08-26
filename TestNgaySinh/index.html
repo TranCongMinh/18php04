@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+	<!-- Dung de ho tro trinh duyet responsive trang web -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="Learn HTML5, CSS3, PHP">
+	<meta name="keywords" content="PHP7, HTML5, CSS3">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/datepicker.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js">
+</script>
+<script type="text/javascript" src="js/date.js">
+</script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+  </script>
+</head>
+<body>
+    <p>Ngày sinh: <input type="text" id="datepicker"></p>
+    <input type="button" value="xem ngày sinh" onclick="xemngay()">
+    <p id="ngaysinh"></p>
+    <p id="thu"></p>
+    <p id="hoangdao"></p>
+    <p id="tuoi"></p>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
